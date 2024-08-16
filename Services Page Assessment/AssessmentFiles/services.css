@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Global Styling*/
+:root {
+    --primary-color: #00102d;
+    --secondary-color: #EEEEEE;
+    --accent-color: #bfaf05;
+    --white-font-color: #fff;
+    --black-font-color: #000;
+    --gray-color: #31363F;
+    --primary-font-size: 4rem;
+    --secondary-font-size: 2.5rem;
+    --text-font-size: 1rem;
+    --content-subtitle-font-size: 1.1rem;
+    --section-max-width: 1320px;
+    --primary-font-family: 'Playfair Display', sans-serif;
+    --text-font-family: 'Poppins', sans-serif;
+    --section-padding: 100px 20px;
+    --box-title-font-size: 18px;
+    --box-title-font-weight: 700;
+}
+
+* {
+    font-family: var(--text-font-family);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header .header-container {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    max-width: var(--section-max-width);
+}
+
+header .logo {
+    height: 100px;
+    width: 150px;
+    object-fit: contain;
+}
+
+nav {
+    overflow: hidden;
+    padding-right: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: var(--text-font-size);
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    min-width: 160px;
+}
+
+nav ul li ul li {
+    float: none;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+.services-banner {
+    background-image: url('/Services Page Assessment/Assets/photo-1565182999561-18d7dc61c393.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    filter: saturate(250%) blur(0) brightness(80%);
+    height: 600px;
+}
+
+.services-banner-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+.services-banner-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    height: 100%;
+    max-width: var(--section-max-width);
+    padding: 100px 20px;
+    width: 100%;
+    margin: auto;
+    color: var(--white-font-color);;
+}
+
+.services-banner-text {
+    width: 50%;
+}
+
+.services-banner-text p {
+    padding-bottom: 10px;
+}
+
+.services-banner .primary-title {
+    font-family: var(--primary-font-family);
+    font-size: 3.5rem;
+    height: 100%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.services-banner-content form {
+    padding-top: 20px;
+    display: flex;
+}
+
+.services-banner-content input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+
+.services-banner-content button {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    background-color: var(--accent-color);
+    margin-left: -44px;
+}
+
+.services-banner-content .box-icon-search{
+    fill: var(--secondary-color);
+}
+
+.section-height {
+    padding: var(--section-padding);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    column-gap: 20px;
+    max-width: var(--section-max-width);
+}
+
+.content-subtitle {
+    font-family: var(--text-font-family);
+    font-size: var(--content-subtitle-font-size);
+    color: var(--accent-color);
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.content-title {
+    font-family: var(--primary-font-family);
+    font-size: var(--secondary-font-size);
+    color: var(--black-font-color);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.comprehensive-marketing-plan {
+    background-color: var(--secondary-color);
+}
+
+.section-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: var(--white-font-color);
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: -3px 28px 71px -138px rgba(0,0,0,0.26);
+-webkit-box-shadow: -3px 28px 71px -138px rgba(0,0,0,0.26);
+-moz-box-shadow: -3px 28px 71px -138px rgba(0,0,0,0.26);
+}
+
+.box img {
+    height: 100px;
+    width: 100px;
+}
+
+.box-title {
+    font-weight: var(--box-title-font-weight);
+    font-size: var(--box-title-font-size);
+}
+
+.my-staging-expertise {
+   background-color: var(--black-font-color); 
+   color: var(--white-font-color);
+   padding: var(--section-padding);
+}
+
+.section-container-2 {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    max-width: var(--section-max-width);
+    margin: 0 auto;
+    align-items: center;
+}
+
+/*.my-staging-expertise-image {
+    background-image: url('/Services Page Assessment/Assets/image-025.webp');
+    filter: saturate(100%) blur(0) brightness(100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}*/
+
+
+.section-container-2 img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.my-staging-expertise-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-staging-expertise-content p:first-child{
+    padding-bottom: 10px;
+}
+
+.my-staging-expertise-content p:nth-of-type(2){
+    color: var(--white-font-color);
+    padding-bottom: 30px;
+}
+
+.my-staging-experience-text-container span {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.ceo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.ceo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--white-font-color);
+}
+
+.ceo p {
+    font-size: var(--box-title-font-size);
+    font-weight: var(--box-title-font-weight);
+}
+
+.chevron-right {
+    fill: var(--white-font-color);
+}
+
+.carousel {
+    margin: 0 auto; /* Center the carousel */
+    width: 100%; /* Adjust the carousel container width if needed */
+}
+
+.carousel-cell {
+    width: 60%; /* Make each cell as large as the carousel container */
+    margin-right: 30px; /* Space between cells */
+    border-radius: 5px;
+    position: relative;
+}
+
+.carousel-cell p {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    left: 20px;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: saturate(160%) brightness(40%);
+}
+
+.carousel-cell img:hover {
+    filter: saturate(150%) brightness(70%);
+}
+
+svg.flickity-button-icon {
+    fill: var(--accent-color);
+}
+
+.flickity-page-dots .dot {
+    background: #fff !important;
+}
+
+.selling-process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selling-process-container {
+    padding: var(--section-padding);
+    max-width: var(--section-max-width);
+    width: 100%;
+}
+
+.selling-process-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selling-process-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding-top: 40px;
+    filter: saturate(100%) brightness(70%);
+}
+
+.selling-process-content {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.selling-process-icon-text span {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.selling-process-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.selling-process-content div span {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.selling-process-icon {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--white-font-color);
+    box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.41);
+-webkit-box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.41);
+-moz-box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.41);
+}
+
+.selling-process-icon {
+    fill: var(--accent-color);
+}
+
+.years-of-success {
+    padding: var(--section-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+.years-of-success-container {
+    max-width: var(--section-max-width);
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding-bottom: 80px;
+}
+
+.span-content-title p:first-child {
+    margin-bottom: 30px;
+}
+
+.title-and-subtitle-container {
+    text-align: center;
+}
+
+.column-alignment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.years-of-success-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.book-an-appointment-button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--accent-color);
+    color: var(--white-font-color);
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.years-of-success-image {
+    width: 80%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+
+.years-of-success-image-2 {
+    width: 80%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.years-of-success-image-3 {
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+
+.years-of-success-image-4 {
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.years-of-success-image-container {
+    position: relative;
+    height: 500px;
+}
+
+.years-of-success-image-border {
+    border: 2px solid var(--gray-color);
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 80%;
+    height: 100%;
+}
+
+.years-of-success-image-border-2 {
+    border: 2px solid var(--gray-color);
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 70%;
+    height: 90%;
+}
+
+.years-of-success-image-border-3 {
+    border: 2px solid var(--gray-color);
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 70%;
+    height: 100%;
+}
+
+.years-of-success-image-border-4 {
+    border: 2px solid var(--gray-color);
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: 70%;
+    height: 100%;
+}
+
+.years-of-success-description p:first-child {
+    padding-bottom: 10px;
+}
+
+.years-of-success-description ol {
+    list-style-position: inside;
+}
+
+.years-of-success-description ol li {
+    padding-bottom: 5px;
+}
+
+.company-logos {
+    padding: 50px 20px;
+}
+
+.logo-holder {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-holder img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    filter: contrast(10%);
+}
+
+.logo-holder img:hover{
+    filter: contrast(100%);
+}
+
+.work-with-us {
+    background-image: url('/Services Page Assessment/Assets/work-with-us.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    filter: saturate(250%) blur(0) brightness(80%);
+}
+
+.work-with-us-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000409;
+    opacity: 0.6;
+}
+
+.work-with-us-container {
+    max-width: var(--section-max-width);
+    padding: var(--section-padding);
+    position: relative;
+}
+
+.work-with-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+}
+
+.work-with-us-content p {
+    color: var(--white-font-color);
+}
+
+.work-with-us-content button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1.5px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: var(--white-font-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #f5f5f5;
+    color: var(--black-font-color);
+    padding: var(--section-padding);
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 100%;
+    max-width: var(--section-max-width);
+    margin: 0 auto;
+}
+
+.footer-content-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-logo {
+    object-fit: contain;
+    width: 150px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-col-images {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-col-images img {
+    width: 30px;
+    object-fit: contain;
+}
+
+.footer-col ul {
+    list-style-type: none;
+}
+
+.footer-col ul li {
+    padding-bottom: 10px;
+}
+
+.footer-col ul a {
+    text-decoration: none;
+    color: var(--black-font-color);
+}
+
+.footer-col span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-icons {
+    fill: var(--accent-color);
+}
+
+footer form {
+    display: flex;
+}
+
+footer form input {
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid var(--accent-color);
+    padding: 0 20px;
+}
+
+footer form button {
+    height: 40px;
+    background-color: var(--accent-color);
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+
+footer form button .submit-icon {
+    fill: var(--white-font-color);
+}
+
+.footer-content-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+}
