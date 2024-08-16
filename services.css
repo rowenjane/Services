@@ -42,10 +42,10 @@ header .header-container {
     z-index: 999;
     width: 100%;
     max-width: var(--section-max-width);
+    padding: 20px;
 }
 
 header .logo {
-    height: 100px;
     width: 150px;
     object-fit: contain;
 }
@@ -96,6 +96,15 @@ nav ul li ul li a {
 
 nav ul li:hover ul {
     display: block;
+}
+
+.sticky {
+    background: var(--black-font-color); 
+    color: var(--white-font-color); 
+}
+
+.sticky nav ul li a {
+    color: var(--white-font-color);
 }
 
 .services-banner {
