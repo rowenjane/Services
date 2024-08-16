@@ -99,7 +99,7 @@ nav ul li:hover ul {
 }
 
 .services-banner {
-    background-image: url('/Services Page Assessment/Assets/photo-1565182999561-18d7dc61c393.jpeg');
+    background-image: url('./Assets/photo-1565182999561-18d7dc61c393.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -258,7 +258,7 @@ nav ul li:hover ul {
 }
 
 /*.my-staging-expertise-image {
-    background-image: url('/Services Page Assessment/Assets/image-025.webp');
+    background-image: url('./Assets/image-025.webp');
     filter: saturate(100%) blur(0) brightness(100%);
     background-position: center;
     background-repeat: no-repeat;
@@ -581,7 +581,7 @@ svg.flickity-button-icon {
 }
 
 .work-with-us {
-    background-image: url('/Services Page Assessment/Assets/work-with-us.webp');
+    background-image: url('./Assets/work-with-us.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -625,18 +625,6 @@ svg.flickity-button-icon {
     background-color: transparent;
     color: var(--white-font-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
     background-color: #f5f5f5;
