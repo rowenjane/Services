@@ -99,7 +99,7 @@ nav ul li:hover ul {
 }
 
 .services-banner {
-    background-image: url('/Services Page Assessment/Assets/photo-1565182999561-18d7dc61c393.jpeg');
+    background-image: url('./Services Page Assessment/Assets/photo-1565182999561-18d7dc61c393.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
