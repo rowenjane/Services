@@ -17,6 +17,14 @@
 
 @media (max-width: 768px) {
 
+    nav ul {
+        display: none;
+    }
+
+    nav .menu li:last-child {
+        display: block;
+    }
+
     .my-staging-expertise-content {
         align-items: center;
     }
@@ -103,6 +111,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media (max-width: 767px) {
