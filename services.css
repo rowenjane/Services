@@ -483,6 +483,11 @@ svg.flickity-button-icon {
     border-radius: 5px;
 }
 
+.book-an-appointment-button:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
 .years-of-success-image {
     width: 80%;
     object-fit: cover;
@@ -640,6 +645,11 @@ svg.flickity-button-icon {
     outline: none;
     background-color: transparent;
     color: var(--white-font-color);
+}
+
+.work-with-us-content button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 footer {
